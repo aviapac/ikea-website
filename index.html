@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מרכז הדשבורדים – איקאה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ikea-yellow: #ffcc00;
+      --ikea-yellow-dark: #e6b800;
+      --ikea-blue: #0051ba;
+      --text: #111;
+      --muted: #555;
+      --border: #ddd;
+      --bg: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Heebo', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--ikea-blue);
+      color: var(--ikea-yellow);
+      padding: 18px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--ikea-yellow);
+    }
+    main { padding: 24px 16px 48px; max-width: 900px; margin: auto; }
+    .item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      background: #fafafa;
+    }
+    .item h3 { margin: 0 0 8px; color: var(--ikea-blue); }
+    .item p { margin: 0 0 6px; color: var(--muted); font-size: 14px; }
+    .open {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      background: var(--ikea-yellow);
+      color: var(--ikea-blue);
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+    }
+    .open:hover { background: var(--ikea-yellow-dark); }
+    footer { margin-top: 28px; color: var(--muted); font-size: 13px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>מרכז הדשבורדים – איקאה</h1>
+  </header>
+  <main>
+    <section class="item">
+      <h3>אודות המערכת</h3>
+      <p>הפרויקט מנתח נתוני מכירות סינתטיים של איקאה ישראל לשנת 2024, בכ-750 אלף שורות נתונים. המערכת ממפה את התפלגות המכירות לפי סוגי רהיטים, אזורי שירות וחודשי השנה, במטרה לחשוף תובנות תפעוליות וניהוליות. הדשבורדים שנבנו ב-Tableau מאפשרים לזהות קטגוריות רווחיות, לאזן מלאי, לתזמן מבצעים ולהשפיע על שורת הרווח.</p>
+    </section>
+
+    <section class="item">
+      <h3>דשבורד 1 – ניהולי</h3>
+      <p>מציג את מגמות המכירה לפי קטגוריה ואזור, ומאפשר להנהלה לזהות את הקטגוריות הרווחיות ביותר, לקבוע יעדי מכירה ולהחליט על מיקומי מחלקות בחנויות. הדשבורד מספק תמונה אסטרטגית מיידית ומסייע בניתוב משאבים למקסום הכנסות ורווחיות.</p>
+      <a class="open" href="https://public.tableau.com/app/profile/avia.batito/viz/1-_17532174436750/Dashboard1" target="_blank">פתחי דשבורד</a>
+    </section>
+
+    <section class="item">
+      <h3>דשבורד 2 – תפעולי</h3>
+      <p>מראה את מספר היחידות שנמכרו בכל חודש ואת אחוז השינוי בהכנסות לעומת החודש הקודם. מאפשר לאנשי הלוגיסטיקה לתזמן הזמנות מלאי מראש, להקצות משאיות גדולות בתקופות ביקוש גבוה ולהקטין קיבולת בירידות חדות. מסייע גם באיזון מלאי בין סניפים ותכנון מבצעים.</p>
+      <a class="open" href="https://public.tableau.com/app/profile/avia.batito/viz/2-_17532176480970/Dashboard2" target="_blank">פתחי דשבורד</a>
+    </section>
+
+    <section class="item">
+      <h3>דשבורד 3 – שיווקי</h3>
+      <p>כולל הכנסה חודשית לכל קטגוריה ותרשים פיזור של מחיר ליחידה מול כמות שנמכרה. מאפשר לצוות השיווק לתזמן קמפיינים, לקדם מוצרים יוקרתיים, לבצע הורדות מחיר למוצרים בעלי ביקוש נמוך, ולאזן מלאי בין סניפים.</p>
+      <a class="open" href="https://public.tableau.com/app/profile/avia.batito/viz/3_17532182324600/Dashboard3" target="_blank">פתחי דשבורד</a>
+    </section>
+
+    <footer>
+      <small>© <span id="y"></span> — אתר קורס ויזואליזציה של מידע – איקאה</small>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
